@@ -1,4 +1,4 @@
-指令：python csv_audit_dashboard_compiler
+指令：python csv_audit_dashboard_compiler.py
 
 ---
 
