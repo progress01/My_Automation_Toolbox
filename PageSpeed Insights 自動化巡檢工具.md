@@ -6,15 +6,7 @@
 
 本工具為基於 Python 與 Selenium 構建的網頁效能自動化稽核腳本。主要用於批量檢測多個政府機關或專案網站的 Google PageSpeed Insights 分數，涵蓋「效能」、「無障礙功能 (A11y)」、「最佳做法」與「SEO」四大指標，並自動導出包含電腦版與行動版數據的 Excel 報表。
 
-## 1. 建議的檔案命名
-
-為了保持專案結構清晰，且符合 Python 開發與自動化腳本的命名慣例，建議使用以下格式命名您的主程式：
-
-* **首選建議**：`pagespeed_audit_crawler.py` (清楚點出 PageSpeed、稽核與爬蟲性質)
-* **備選建議**：`run_pagespeed_tests.py` (強調執行動作，適合常規排程)
-* **備選建議**：`psi_automation_bot.py` (PSI 為 PageSpeed Insights 的業界簡稱)
-
-## 2. 需準備的輸入資料 (Input Data)
+## 1. 需準備的輸入資料 (Input Data)
 
 目前腳本採用**內部字典 (Dictionary)** 的方式進行資料配置，無需額外匯入外部 CSV 或 Excel 檔案。每次執行前，請直接於程式碼區塊 `--- 1. 設定輸入資料與對應名稱 ---` 中的 `SITE_DATA` 變數增刪網站清單。
 
@@ -36,7 +28,7 @@ SITE_DATA = {
 
 
 
-## 3. 預期的產出結果 (Expected Output)
+## 2. 預期的產出結果 (Expected Output)
 
 腳本執行完畢後，會在程式執行的同一個資料夾目錄下，自動生成一份名為 **`PageSpeed_Final_Report.xlsx`** 的 Excel 報表。
 
@@ -55,7 +47,7 @@ SITE_DATA = {
 
 > **提示**：報表中的四大分數欄位已在輸出前自動轉為「數值格式」，您可以直接在 Excel 中進行平均值計算、排序或繪製樞紐分析圖表。
 
-## 4. 執行環境與注意事項 (Caveats & Requirements)
+## 3. 執行環境與注意事項 (Caveats & Requirements)
 
 ### 環境依賴 (Dependencies)
 
