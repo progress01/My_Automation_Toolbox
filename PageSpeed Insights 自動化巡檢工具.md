@@ -1,4 +1,4 @@
-這是一份為您的 PageSpeed Insights 自動化巡檢腳本量身打造的 README 使用說明書。內容以結構化方式呈現，符合專業的系統文件規範。
+指令：python PageSpeed_Crawler.py
 
 ---
 
