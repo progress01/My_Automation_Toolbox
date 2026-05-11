@@ -2,7 +2,7 @@
 
 ---
 
-# 📄 PageSpeed Insights 自動化巡檢工具
+# 📄 PageSpeed Insights 自動化工具
 
 本工具為基於 Python 與 Selenium 構建的網頁效能自動化稽核腳本。主要用於批量檢測多個政府機關或專案網站的 Google PageSpeed Insights 分數，涵蓋「效能」、「無障礙功能 (A11y)」、「最佳做法」與「SEO」四大指標，並自動導出包含電腦版與行動版數據的 Excel 報表。
 
